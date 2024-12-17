@@ -1,0 +1,116 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes de Programación Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Apuntes de Programación Web: HTML, CSS y JavaScript</h1>
+<p>Autor: Saúl Castro Castro</p>
+
+<section>
+    <h2>CSS (Cascading Style Sheets)</h2>
+    <p>CSS es el lenguaje utilizado para estilizar el contenido de HTML, permitiendo aplicar diseño visual como colores, fuentes y márgenes.</p>
+
+    <h3>Sintaxis CSS</h3>
+    <code>
+        selector &#123;<br>
+        &nbsp;&nbsp;propiedad: valor;<br>
+        &#125;
+    </code>
+    <p>En CSS, un selector apunta a los elementos que queremos estilizar, y cada propiedad afecta un aspecto del estilo de esos elementos.</p>
+
+    <h3>Tipos de Selectores</h3>
+    <ul>
+        <li><strong>Selector de etiqueta:</strong> Selecciona elementos por su nombre, como <code>p</code> o <code>h1</code>.</li>
+        <li><strong>Selector de ID:</strong> Selecciona un elemento único usando <code>#</code>, como <code>#miId</code>.</li>
+        <li><strong>Selector de clase:</strong> Selecciona elementos con una clase usando <code>.</code>, como <code>.miClase</code>.</li>
+    </ul>
+
+    <h3>Propiedades Comunes</h3>
+    <ul>
+        <li><strong>color:</strong> Define el color del texto.</li>
+        <li><strong>background-color:</strong> Establece el color de fondo.</li>
+        <li><strong>font-size:</strong> Tamaño de la fuente.</li>
+        <li><strong>margin:</strong> Espacio exterior alrededor del elemento.</li>
+        <li><strong>padding:</strong> Espacio interior dentro del elemento.</li>
+        <li><strong>border:</strong> Define el borde alrededor del elemento.</li>
+    </ul>
+
+    <h3>Pseudoclases</h3>
+    <ul>
+        <li><strong>:hover</strong> - Aplica estilo cuando el usuario pasa el ratón sobre el elemento.</li>
+        <li><strong>:active</strong> - Aplica estilo cuando el elemento es activado (como un botón clicado).</li>
+        <li><strong>:focus</strong> - Aplica estilo cuando el elemento recibe foco (como en un campo de entrada).</li>
+    </ul>
+    <code>
+        button:hover &#123;<br>
+        &nbsp;&nbsp;background-color: #2980b9;<br>
+        &#125;
+    </code>
+
+    <h3>Pseudoelementos</h3>
+    <ul>
+        <li><strong>::before</strong> - Inserta contenido antes del contenido del elemento.</li>
+        <li><strong>::after</strong> - Inserta contenido después del contenido del elemento.</li>
+        <li><strong>::first-line</strong> - Aplica estilo a la primera línea del texto.</li>
+    </ul>
+    <code>
+        p::first-line &#123;<br>
+        &nbsp;&nbsp;font-weight: bold;<br>
+        &#125;
+    </code>
+
+    <h3>Modelo de Caja</h3>
+    <ul>
+        <li><strong>Margin:</strong> Espacio exterior de la caja.</li>
+        <li><strong>Border:</strong> Borde que rodea la caja.</li>
+        <li><strong>Padding:</strong> Espacio entre el contenido y el borde.</li>
+        <li><strong>Content:</strong> Área donde se encuentra el contenido.</li>
+    </ul>
+
+    <h3>Ejemplo Completo de CSS</h3>
+    <code>
+        body &#123;<br>
+        &nbsp;&nbsp;font-family: Arial, sans-serif;<br>
+        &nbsp;&nbsp;background-color: #f9f9f9;<br>
+        &#125;<br><br>
+        h1 &#123;<br>
+        &nbsp;&nbsp;color: #2c3e50;<br>
+        &nbsp;&nbsp;text-align: center;<br>
+        &#125;<br><br>
+        .boton &#123;<br>
+        &nbsp;&nbsp;background-color: #3498db;<br>
+        &nbsp;&nbsp;color: white;<br>
+        &nbsp;&nbsp;padding: 10px 20px;<br>
+        &nbsp;&nbsp;border: none;<br>
+        &nbsp;&nbsp;border-radius: 5px;<br>
+        &nbsp;&nbsp;cursor: pointer;<br>
+        &#125;<br><br>
+        .boton:hover &#123;<br>
+        &nbsp;&nbsp;background-color: #2980b9;<br>
+        &#125;
+    </code>
+</section>
+
+</body>
+</html>
