@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Archivos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .directory {
+            margin-left: 20px;
+        }
+        .file, .folder {
+            margin: 5px 0;
+        }
+        .folder {
+            font-weight: bold;
+            color: #0066cc;
+        }
+        .file {
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sistema de Archivos</h1>
+
+    <div class="folder">
+        <a href="repaso-index.html">repaso-index.html</a> (Archivo)
+    </div>
+
+    <div class="folder">
+        IRG (Carpeta)
+        <div class="directory">
+            <div class="file">
+                <a href="#">archivo1.txt</a> (Archivo de texto)
+            </div>
+            <div class="file">
+                <a href="#">archivo2.jpg</a> (Imagen JPG)
+            </div>
+            <div class="folder">
+                subcarpeta
+                <div class="directory">
+                    <div class="file">
+                        <a href="#">archivo3.pdf</a> (PDF)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
